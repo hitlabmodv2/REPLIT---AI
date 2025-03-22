@@ -1,0 +1,38 @@
+{
+  "name": "readsw",
+  "version": "1.0.0",
+  "description": "Wilykun",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "pm2": "pm2 start index.js --name hisoka -- --max-old-space-size=8192",
+    "restart:pm2": "pm2 restart hisoka",
+    "stop:pm2": "pm2 stop hisoka"
+  },
+  "keywords": [
+    "autoreadsw",
+    "baileys"
+  ],
+  "author": "Wily kun",
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/boom": "^10.0.1",
+    "axios": "latest",
+    "baileys": "latest",
+    "cfonts": "latest",
+    "chalk": "latest",
+    "dotenv": "latest",
+    "file-type": "latest",
+    "fluent-ffmpeg": "latest",
+    "form-data": "latest",
+    "mime-types": "latest",
+    "node-fetch": "latest",
+    "node-webpmux": "latest",
+    "os": "latest",
+    "pino": "^9.6.0",
+    "qrcode-terminal": "latest",
+    "sharp": "^0.32.6",
+    "wa-sticker-formatter": "^4.4.4"
+  }
+}
